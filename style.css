@@ -1,0 +1,38 @@
+*{  
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Yuyu", sans-serif;
+    line-height:1.6;
+    background: #0a97cf;
+    background: linear-gradient(90deg,rgba(10, 151, 207, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(237, 221, 83, 1) 100%);;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none; 
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    border: 1px solid skyblue;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition:all 0.5s ease;
+}
+
+nav ul li a:hover{
+    background-color: black;
+    transform:translateY(-100px);
+}
