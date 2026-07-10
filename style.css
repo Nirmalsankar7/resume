@@ -1,38 +1,111 @@
-*{  
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Yuyu", sans-serif;
-    line-height:1.6;
-    background: #0a97cf;
-    background: linear-gradient(90deg,rgba(10, 151, 207, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(237, 221, 83, 1) 100%);;
+    line-height: 1.6;
+    background: linear-gradient(90deg, rgba(10, 151, 207, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(237, 221, 83, 1) 100%);
+    color: #1f2937;
 }
 
-h1{
-    text-align: center;
-    margin-bottom: 2rem;
+header,
+main,
+footer {
+    width: min(1000px, 90%);
+    margin: 0 auto;
 }
-nav ul{
+
+header {
+    text-align: center;
+    padding: 2rem 0 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #4b5563;
+}
+
+nav ul {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    list-style: none; 
-
+    gap: 1.2rem;
+    list-style: none;
+    margin: 1rem 0 2rem;
+    flex-wrap: wrap;
 }
 
 nav ul li a {
     text-decoration: none;
-    border: 1px solid skyblue;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    transition:all 0.5s ease;
+    border: 1px solid #0f766e;
+    padding: 0.6rem 1rem;
+    border-radius: 999px;
+    color: #0f172a;
+    transition: all 0.3s ease;
 }
 
-nav ul li a:hover{
-    background-color: black;
-    transform:translateY(-100px);
+nav ul li a:hover {
+    background-color: #0f172a;
+    color: white;
+    transform: translateY(-3px);
+}
+
+section {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    margin-bottom: 0.8rem;
+    color: #0f766e;
+}
+
+.info-list,
+.contact-list,
+.card ul,
+.skills-grid ul {
+    padding-left: 1.2rem;
+}
+
+.card-grid,
+.skills-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.card {
+    background: #f8fafc;
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0 2rem;
+    color: #374151;
+}
+
+footer a {
+    color: #0f766e;
+    text-decoration: none;
 }
